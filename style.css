@@ -1,0 +1,68 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#0f172a;color:#fff}
+
+.landing,.auth-container, .main-container{
+display:flex;justify-content:center;align-items:center;min-height:100vh;
+}
+
+.glass-card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(15px);
+padding:40px;border-radius:20px;
+width:100%;max-width:400px;
+box-shadow:0 0 40px rgba(0,0,0,0.4);
+animation:fadeIn 0.8s ease-in-out;
+}
+
+input,textarea{
+width:100%;padding:12px;margin:10px 0;
+border:none;border-radius:10px;
+background:#1e293b;color:white;
+}
+
+textarea{resize:none;height:100px}
+
+.btn{
+display:inline-block;padding:10px 20px;
+border-radius:20px;text-decoration:none;
+cursor:pointer;transition:0.3s;
+border:none;margin-top:10px;
+}
+
+.primary{background:#1da1f2;color:white}
+.primary:hover{transform:scale(1.05)}
+.secondary{background:#334155;color:white}
+
+.nav{
+position:fixed;top:0;width:100%;
+background:#0f172a;padding:15px;
+display:flex;justify-content:space-between;
+border-bottom:1px solid #1e293b;
+}
+
+.feed{
+margin-top:80px;max-width:600px;width:100%;
+}
+
+.tweet{
+background:#1e293b;padding:15px;
+border-radius:15px;margin-bottom:15px;
+animation:fadeIn 0.5s ease-in-out;
+}
+
+.tweet small{color:#94a3b8}
+
+.actions{margin-top:10px;display:flex;gap:10px}
+
+.comment-box{
+margin-top:10px;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(10px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+@media(max-width:600px){
+.feed{padding:10px}
+}
